@@ -1,0 +1,14 @@
+version: '3'
+services:
+ dxperts:
+  container_name: dxperts-core
+  # Image to run
+  image: bitbrainstech/dxperts-core:latest
+  restart: always
+  # Optional parameters
+  environment:
+   - DXPERTSD_ARGS=--genesis-json /var/lib/dxperts/genesis.json
+  ports:
+   - "0.0.0.0:8090:8090"
+  volumes:
+  - "./dxperts-fullnode:/var/lib/dxperts"

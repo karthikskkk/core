@@ -1,0 +1,77 @@
+/*
+ * Copyright (c) 2021 Cryptonomex, Inc., and contributors.
+ *
+ * The MIT License
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+#include <graphene/chain/blockproducer_evaluator.hpp>
+#include <graphene/chain/blockproducer_object.hpp>
+#include <graphene/chain/dxpcore_member_object.hpp>
+#include <graphene/chain/account_object.hpp>
+#include <graphene/chain/database.hpp>
+#include <graphene/protocol/vote.hpp>
+
+namespace graphene { namespace chain {
+
+void_result blockproducer_create_evaluator::do_evaluate( const blockproducer_create_operation& op )
+{ try {
+   FC_ASSERT(db().get(op.blockproducer_account).is_lifetime_member());
+   return void_result();
+} FC_CAPTURE_AND_RETHROW( (op) ) }
+
+object_id_type blockproducer_create_evaluator::do_apply( const blockproducer_create_operation& op )
+{ try {
+   database& _db = db();
+   vote_id_type vote_id;
+   _db.modify( _db.get_global_properties(), [&vote_id](global_property_object& p) {
+      vote_id = vote_id_type(vote_id_type::blockproducer, p.next_available_vote_id++);
+   });
+
+   const auto& new_blockproducer_object = _db.create<blockproducer_object>( [&op,&vote_id]( blockproducer_object& obj ){
+         obj.blockproducer_account  = op.blockproducer_account;
+         obj.signing_key      = op.block_signing_key;
+         obj.vote_id          = vote_id;
+         obj.url              = op.url;
+   });
+   return new_blockproducer_object.id;
+} FC_CAPTURE_AND_RETHROW( (op) ) }
+
+void_result blockproducer_update_evaluator::do_evaluate( const blockproducer_update_operation& op )
+{ try {
+   FC_ASSERT(db().get(op.blockproducer).blockproducer_account == op.blockproducer_account);
+   return void_result();
+} FC_CAPTURE_AND_RETHROW( (op) ) }
+
+void_result blockproducer_update_evaluator::do_apply( const blockproducer_update_operation& op )
+{ try {
+   database& _db = db();
+   _db.modify(
+      _db.get(op.blockproducer),
+      [&op]( blockproducer_object& wit )
+      {
+         if( op.new_url.valid() )
+            wit.url = *op.new_url;
+         if( op.new_signing_key.valid() )
+            wit.signing_key = *op.new_signing_key;
+      });
+   return void_result();
+} FC_CAPTURE_AND_RETHROW( (op) ) }
+
+} } // graphene::chain

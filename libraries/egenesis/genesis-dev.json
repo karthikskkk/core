@@ -1,0 +1,1365 @@
+{
+  "initial_timestamp": "2021-10-08T16:32:55",
+  "max_core_supply": "90000000000000",
+  "initial_parameters": {
+    "current_fees": {
+      "parameters": [
+        [
+          0,
+          {
+            "fee": 2000000,
+            "price_per_kbyte": 1000000
+          }
+        ],
+        [
+          1,
+          {
+            "fee": 500000
+          }
+        ],
+        [
+          2,
+          {
+            "fee": 0
+          }
+        ],
+        [
+          3,
+          {
+            "fee": 2000000
+          }
+        ],
+        [4, {}],
+        [
+          5,
+          {
+            "basic_fee": 500000,
+            "premium_fee": 200000000,
+            "price_per_kbyte": 100000
+          }
+        ],
+        [
+          6,
+          {
+            "fee": 2000000,
+            "price_per_kbyte": 100000
+          }
+        ],
+        [
+          7,
+          {
+            "fee": 300000
+          }
+        ],
+        [
+          8,
+          {
+            "membership_annual_fee": 200000000,
+            "membership_lifetime_fee": 1000000000
+          }
+        ],
+        [
+          9,
+          {
+            "fee": 50000000
+          }
+        ],
+        [
+          10,
+          {
+            "long_symbol": 500000000,
+            "price_per_kbyte": 10,
+            "symbol3": "50000000000",
+            "symbol4": "30000000000"
+          }
+        ],
+        [
+          11,
+          {
+            "fee": 50000000,
+            "price_per_kbyte": 10
+          }
+        ],
+        [
+          12,
+          {
+            "fee": 50000000
+          }
+        ],
+        [
+          13,
+          {
+            "fee": 50000000
+          }
+        ],
+        [
+          14,
+          {
+            "fee": 2000000,
+            "price_per_kbyte": 100000
+          }
+        ],
+        [
+          15,
+          {
+            "fee": 2000000
+          }
+        ],
+        [
+          16,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          17,
+          {
+            "fee": 10000000
+          }
+        ],
+        [
+          18,
+          {
+            "fee": 50000000
+          }
+        ],
+        [
+          19,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          20,
+          {
+            "fee": 500000000
+          }
+        ],
+        [
+          21,
+          {
+            "fee": 2000000
+          }
+        ],
+        [
+          22,
+          {
+            "fee": 2000000,
+            "price_per_kbyte": 10
+          }
+        ],
+        [
+          23,
+          {
+            "fee": 100000,
+            "price_per_kbyte": 10
+          }
+        ],
+        [
+          24,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          25,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          26,
+          {
+            "fee": 2000000
+          }
+        ],
+        [
+          27,
+          {
+            "fee": 0,
+            "price_per_kbyte": 10
+          }
+        ],
+        [
+          28,
+          {
+            "fee": 500000000
+          }
+        ],
+        [
+          29,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          30,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          31,
+          {
+            "fee": 2000000
+          }
+        ],
+        [
+          32,
+          {
+            "fee": 500000000
+          }
+        ],
+        [
+          33,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          34,
+          {
+            "fee": 100000
+          }
+        ],
+        [
+          35,
+          {
+            "fee": 100000,
+            "price_per_kbyte": 10
+          }
+        ],
+        [
+          36,
+          {
+            "fee": 2000000
+          }
+        ],
+        [37, {}],
+        [
+          38,
+          {
+            "fee": 500000,
+            "price_per_kbyte": 10
+          }
+        ],
+        [
+          39,
+          {
+            "fee": 500000,
+            "price_per_output": 500000
+          }
+        ],
+        [
+          40,
+          {
+            "fee": 500000,
+            "price_per_output": 500000
+          }
+        ],
+        [
+          41,
+          {
+            "fee": 500000
+          }
+        ],
+        [42, {}],
+        [
+          43,
+          {
+            "fee": 2000000
+          }
+        ],
+        [44, {}],
+        [
+          45,
+          {
+            "fee": 2000000
+          }
+        ],
+        [46, {}],
+        [
+          47,
+          {
+            "fee": 2000000
+          }
+        ],
+        [
+          48,
+          {
+            "fee": 2000000
+          }
+        ]
+      ],
+      "scale": 10000
+    },
+    "account_fee_scale_bitshifts": 4,
+    "accounts_per_fee_scale": 1000,
+    "allow_non_member_whitelists": false,
+    "block_interval": 1,
+    "cashback_vesting_period_seconds": 7776000,
+    "cashback_vesting_threshold": 10000000,
+    "dxpcore_proposal_review_period": 3600,
+    "count_non_member_votes": true,
+    "extensions": {
+      "updatable_htlc_options": {
+        "max_timeout_secs": 2592000,
+        "max_preimage_size": 1024000
+      }
+    },
+    "fee_liquidation_threshold": 10000000,
+    "lifetime_referrer_percent_of_fee": 3000,
+    "maintenance_interval": 3600,
+    "maintenance_skip_slots": 3,
+    "max_authority_depth": 2,
+    "max_predicate_opcode": 1,
+    "maximum_asset_feed_publishers": 10,
+    "maximum_asset_whitelist_authorities": 10,
+    "maximum_authority_membership": 10,
+    "maximum_block_size": 2097152,
+    "maximum_dxpcore_count": 1001,
+    "maximum_proposal_lifetime": 2419200,
+    "maximum_time_until_expiration": 86400,
+    "maximum_transaction_size": 98304,
+    "maximum_blockproducer_count": 1001,
+    "network_percent_of_fee": 2000,
+    "reserve_percent_of_fee": 2000,
+    "blockproducer_pay_per_block": 150000,
+    "benefactor_budget_per_day": "50000000000"
+  },
+  "initial_accounts": [
+    {
+      "name": "init0",
+      "owner_key": "DXP5PmRZDkg8C8TeCY6EEUkuUFzQRpaKU37PQNoe6MECvDJSWzSMc",
+      "active_key": "DXP5PmRZDkg8C8TeCY6EEUkuUFzQRpaKU37PQNoe6MECvDJSWzSMc",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init1",
+      "owner_key": "DXP8KwHw8sbU9c97X2p6t7Vuj5LyCrWy5m4r6TFszWX45Ah3xCMki",
+      "active_key": "DXP8KwHw8sbU9c97X2p6t7Vuj5LyCrWy5m4r6TFszWX45Ah3xCMki",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init2",
+      "owner_key": "DXP7YJjnMhXAnC7oTFQxcNtWYEbk3vyR14UAFZaBtNG281mcUWjBA",
+      "active_key": "DXP7YJjnMhXAnC7oTFQxcNtWYEbk3vyR14UAFZaBtNG281mcUWjBA",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init3",
+      "owner_key": "DXP6dkfmjy6Fe6VQwZB68LhmKkNnPVXTr7Y8zaZVgkSc3z1aFAMqy",
+      "active_key": "DXP6dkfmjy6Fe6VQwZB68LhmKkNnPVXTr7Y8zaZVgkSc3z1aFAMqy",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init4",
+      "owner_key": "DXP5WonW4g26jMrMHBKsRgtiqtyEeU1DDTK6zFC9uc5evahvYsfPs",
+      "active_key": "DXP5WonW4g26jMrMHBKsRgtiqtyEeU1DDTK6zFC9uc5evahvYsfPs",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init5",
+      "owner_key": "DXP6RTrBBVN77mV5DqDP2iYEHCSdhzoo2bS1MfZwfb9XV6h4k1Me6",
+      "active_key": "DXP6RTrBBVN77mV5DqDP2iYEHCSdhzoo2bS1MfZwfb9XV6h4k1Me6",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init6",
+      "owner_key": "DXP5de5bXQsZ9o6jxRmoza3DzH97R7mqd9ySt84BBEWpsMJpK7yQ5",
+      "active_key": "DXP5de5bXQsZ9o6jxRmoza3DzH97R7mqd9ySt84BBEWpsMJpK7yQ5",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init7",
+      "owner_key": "DXP6JW4BTR5Gtu4Hew8PX1PDH89sjzArbC8PH3ZYQDfyw5Rdo61jD",
+      "active_key": "DXP6JW4BTR5Gtu4Hew8PX1PDH89sjzArbC8PH3ZYQDfyw5Rdo61jD",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init8",
+      "owner_key": "DXP6CHsMswfJjXNRR1xA7PmPZ3qNv2aFCzPuejhJYHhWs3LsoxkfH",
+      "active_key": "DXP6CHsMswfJjXNRR1xA7PmPZ3qNv2aFCzPuejhJYHhWs3LsoxkfH",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init9",
+      "owner_key": "DXP5zUznzdFRT1HmdhiPX42EgGhhefv5s9GWkWpqeSzzpq7rN2Sbs",
+      "active_key": "DXP5zUznzdFRT1HmdhiPX42EgGhhefv5s9GWkWpqeSzzpq7rN2Sbs",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "init10",
+      "owner_key": "DXP8ZUAsYB4Jj6ZtfqMeepCqUMKxak56RRPKRoCJ3njTWvtuE1cBp",
+      "active_key": "DXP8ZUAsYB4Jj6ZtfqMeepCqUMKxak56RRPKRoCJ3njTWvtuE1cBp",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "matrix",
+      "owner_key": "DXP7bqGMgqkVuDYEjon9i4worLpwFjmy1AUS8LbwJs2hv3VRUCNcq",
+      "active_key": "DXP7bqGMgqkVuDYEjon9i4worLpwFjmy1AUS8LbwJs2hv3VRUCNcq",
+      "is_lifetime_member": true
+    },
+    {
+      "name": "dxperts.blockchain",
+      "owner_key": "DXP6gyHDTbPuFX5TpuK4ULD8xrJMJJpN66HS1gm67GJaFKSqFHodm",
+      "active_key": "DXP6gyHDTbPuFX5TpuK4ULD8xrJMJJpN66HS1gm67GJaFKSqFHodm",
+      "is_lifetime_member": true
+    }
+  ],
+  "initial_dxpcore_candidates": [
+    {
+      "owner_name": "init0"
+    },
+    {
+      "owner_name": "init1"
+    },
+    {
+      "owner_name": "init2"
+    },
+    {
+      "owner_name": "init3"
+    },
+    {
+      "owner_name": "init4"
+    },
+    {
+      "owner_name": "init5"
+    },
+    {
+      "owner_name": "init6"
+    },
+    {
+      "owner_name": "init7"
+    },
+    {
+      "owner_name": "init8"
+    },
+    {
+      "owner_name": "init9"
+    },
+    {
+      "owner_name": "init10"
+    }
+  ],
+  "initial_benefactor_candidates": [],
+  "initial_blockproducer_candidates": [
+    {
+      "block_signing_key": "DXP7g2r6TtGVd9vWVPphTZoxrfMFGpvZsdB9dc9jE43xDAZ1kx6gW",
+      "owner_name": "init0"
+    },
+    {
+      "block_signing_key": "DXP7zFoWcdtwFmJBCsLKw6EauofK7obMx9K8U1SsuFi9bPs4qPxRs",
+      "owner_name": "init1"
+    },
+    {
+      "block_signing_key": "DXP6UE1mDD3LPi36EAh5J1KthQ9dVSUf44VD21rKZkRJXojkvr9jL",
+      "owner_name": "init2"
+    },
+    {
+      "block_signing_key": "DXP7G9zUZEgbiJbCg1PAXon8kwxwV5NUmdWoAaTWyduPHH93dWHRm",
+      "owner_name": "init3"
+    },
+    {
+      "block_signing_key": "DXP5s2Xev7JNWqgNHJhKEvpV15Uiu4CkdmH3dvNkPgNpiTntmYVQr",
+      "owner_name": "init4"
+    },
+    {
+      "block_signing_key": "DXP7saPAfGrvEnVEPAzCcK2op5eDMZZxFC7WXwgmaYapZydkP7cwF",
+      "owner_name": "init5"
+    },
+    {
+      "block_signing_key": "DXP5Q3nDa9bhf87YaPxMCUjH8va5UWjzBWNLyXApsj68Z3AMV3g3k",
+      "owner_name": "init6"
+    },
+    {
+      "block_signing_key": "DXP6fYb1ESbQoarcTvYNekz6UhWTvYoXeWeXxVMxShuCsLWPR9sTQ",
+      "owner_name": "init7"
+    },
+    {
+      "block_signing_key": "DXP5ksfWJ5VF8TrdfXFnWCB4qZoyASnwuo9ZREtNoq5sFusXUhqif",
+      "owner_name": "init8"
+    },
+    {
+      "block_signing_key": "DXP6XnNrm3ooA1TaJZD7E3HxrNsydcY8D4SLV5NbboeT7Q29rB1hn",
+      "owner_name": "init9"
+    },
+    {
+      "block_signing_key": "DXP7fZeV3UzdnjDFrWSyTQGaU5ppQsWB86Fqknd9roCLzdsVM1G66",
+      "owner_name": "init10"
+    }
+  ],
+  "initial_active_blockproducers": 11,
+  "initial_assets": [
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 9000000000000,
+          "debt": 4000000000000000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 DSTAR",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "20000000000000000",
+      "precision": 4,
+      "symbol": "DSTAR"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Point",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "20000000000000000",
+      "precision": 0,
+      "symbol": "PNT"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Profile Page",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 0,
+      "symbol": "PAGE"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Company",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 0,
+      "symbol": "COMP"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Project",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 0,
+      "symbol": "PROJ"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Group",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "GRUP"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Job",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "JOBS"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts News",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "NEWS"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Poll",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "POLL"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Event",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "EVNT"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Resource",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "RESO"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Announcement",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "ANNT"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Advertisement",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "ADVT"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Dxperts Services",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "36000000000",
+      "precision": 4,
+      "symbol": "SRVC"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Bitcoin",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "210000000000",
+      "precision": 8,
+      "symbol": "BTC"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Ethereum",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000",
+      "precision": 18,
+      "symbol": "ETH"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Tether",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "600000000000000",
+      "precision": 5,
+      "symbol": "USDT"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Binance Coin",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1500000000000",
+      "precision": 8,
+      "symbol": "BNB"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Polka Dot",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "10000000000000",
+      "precision": 10,
+      "symbol": "DOT"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Cardano",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "450000000000000",
+      "precision": 6,
+      "symbol": "ADA"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Solana",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "5000000000000",
+      "precision": 9,
+      "symbol": "SOL"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 EOS",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "10000000000000",
+      "precision": 4,
+      "symbol": "EOS"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Tron",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 8,
+      "symbol": "TRX"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 XRP",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 6,
+      "symbol": "XRP"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Stellar",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "50000000000000",
+      "precision": 6,
+      "symbol": "XLM"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 OKnOK",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 5,
+      "symbol": "KNK"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Fashio",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 5,
+      "symbol": "FSHO"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 Jnanam",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 5,
+      "symbol": "JNM"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [],
+      "description": "1 DX Kingdom",
+      "is_smarttoken": false,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 5,
+      "symbol": "DXK"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 750000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 United States dollar",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "USD"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 52500000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Russian Ruble",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "RUB"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 548000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 British Pound Sterling",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "GBP"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 4800000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Chinese Yuan",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "CNY"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 645000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Euro",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "EUR"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 84750000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Japanese Yuan",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "JPY"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 880500000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 South Korean won",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "KRW"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 55500000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Indian Rupee",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "INR"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 682500,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Swiss Franc",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "CHF"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 922500,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Canadian Dollar",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "CAD"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 5827500,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Hong Kong Dollar",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "HKD"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 990000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Australian Dollar",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "AUD"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 15000000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Mexican Peso",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "MXN"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 1005000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Singapore Dollar",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "SGD"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 10638000000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Indonesian Rupaiah",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "IDR"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 6420000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Swedish Krona",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "SEK"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 1042500,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 New  Zealand Dollar",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "NZD"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 2700000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Emirati Dirham",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "AED"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 24750000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Thai Baht",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "THB"
+    },
+    {
+      "accumulated_fees": 0,
+      "collateral_records": [
+        {
+          "collateral": 1500000,
+          "debt": 6000000,
+          "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+        }
+      ],
+      "description": "1 Macau Pataca",
+      "is_smarttoken": true,
+      "issuer_name": "dxpcore-account",
+      "max_supply": "1000000000000000",
+      "precision": 4,
+      "symbol": "MOP"
+    }
+  ],
+  "initial_balances": [
+    {
+      "amount": 4000000000000000,
+      "asset_symbol": "DSTAR",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 225000000000,
+      "asset_symbol": "DXP",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "PAGE",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "COMP",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "PROJ",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "GRUP",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "JOBS",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "NEWS",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "POLL",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "EVNT",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "RESO",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "ANNT",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "ADVT",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 360000,
+      "asset_symbol": "SRVC",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 2100000,
+      "asset_symbol": "BTC",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000,
+      "asset_symbol": "ETH",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 6000000000,
+      "asset_symbol": "USDT",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 15000000,
+      "asset_symbol": "BNB",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 100000000,
+      "asset_symbol": "DOT",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 4500000000,
+      "asset_symbol": "ADA",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 50000000,
+      "asset_symbol": "SOL",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 100000000,
+      "asset_symbol": "EOS",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000000,
+      "asset_symbol": "TRX",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000000,
+      "asset_symbol": "XRP",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 500000000,
+      "asset_symbol": "XLM",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000000,
+      "asset_symbol": "KNK",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000000,
+      "asset_symbol": "FSHO",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000000,
+      "asset_symbol": "JNM",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10000000000,
+      "asset_symbol": "DXK",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 2700000,
+      "asset_symbol": "AED",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 990000,
+      "asset_symbol": "AUD",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 922500,
+      "asset_symbol": "CAD",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 682500,
+      "asset_symbol": "CHF",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 4800000,
+      "asset_symbol": "CNY",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 645000,
+      "asset_symbol": "EUR",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 548000,
+      "asset_symbol": "GBP",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 84750000,
+      "asset_symbol": "JPY",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 55500000,
+      "asset_symbol": "INR",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 750000,
+      "asset_symbol": "USD",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 1005000,
+      "asset_symbol": "SGD",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 880500000,
+      "asset_symbol": "KRW",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 52500000,
+      "asset_symbol": "RUB",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 5827500,
+      "asset_symbol": "HKD",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 10638000000,
+      "asset_symbol": "IDR",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 6000000,
+      "asset_symbol": "MOP",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 15000000,
+      "asset_symbol": "MXN",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 1042500,
+      "asset_symbol": "NZD",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 24750000,
+      "asset_symbol": "THB",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    },
+    {
+      "amount": 6420000,
+      "asset_symbol": "SEK",
+      "owner": "DXPJeW3tBU8npQwy66d4LNz3U1YXoCjaQWmn"
+    }
+  ],
+  "initial_vesting_balances": [],
+  "immutable_parameters": {
+    "min_dxpcore_member_count": 11,
+    "min_blockproducer_count": 11,
+    "num_special_accounts": 0,
+    "num_special_assets": 0
+  }
+}
